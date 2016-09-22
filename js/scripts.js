@@ -16,6 +16,7 @@ function success(pos) {
   document.getElementById("day-holder").innerHTML = days[currentdate.getDay()];
   document.getElementById("date-holder").innerHTML = currentdate.getDate();
   document.getElementById("month-holder").innerHTML = months[currentdate.getMonth()];
+  document.getElementById("loader").style.opacity = "0";
 };
 
 function httpGet(theUrl)
